@@ -1,0 +1,74 @@
+/*-----CSS Reset----*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+/* body-section*/
+body {
+  background: url("img/images.jpg") no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+/*------Form-Section------*/
+.Registration-Form {
+  position: absolute;
+  width: 300px;
+  top: 15vh;
+  left: 40%;
+}
+
+.Registration-Form h1 {
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 8px 0px;
+}
+.Registration-Form p {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+.Registration-Form input {
+  padding: 8px 12px;
+  border: 0px;
+  width: 100%;  
+  border-radius: 5px;
+  outline: none;
+}
+.errormessage{
+  color:  red;
+  font-size: 13px;
+  margin-top: 4px;
+}
+.password-container {
+    width: 110%;  
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+}
+#btn {
+    margin: 15px 0px;
+    color: #000;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 7px;
+    width: 50%;
+}
+#show-icon,#hide-icon,#show-icon2,#hide-icon2{
+    float: right;
+    color: #000;
+    padding-right:15px;
+    padding-top: 8px;
+    cursor: pointer;
+}
+#hide-icon,#hide-icon2{
+    display: none;
+}
+
+    
+    

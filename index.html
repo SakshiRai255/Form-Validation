@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="Registration-Form">
+        <h1>Sign Form </h1><br>
+        <form name="MyForm" action="#" method="#" onsubmit="return validate()">
+            <p>Name:</p>
+            <input type="text" name="MyName" id="MyName" autocomplete="off">
+            <span id="username" class="errormessage"></span>
+            <p>Email:</p>
+            <input type="email" name="MyEmail" id="MyEmail" autocomplete="off">
+            <span id="useremail" class="errormessage"></span>
+            <p>Password:</p>
+            <div class="password-container">
+                <input type="password" name="MyPassword" id="MyPassword" autocomplete="off">
+                <i class="fa-solid fa-eye" onclick="myFunction()" id="show-icon"></i>
+                <i class="fa-solid fa-eye-slash" onclick="myFunction()" id="hide-icon"></i>
+            </div>
+            <span id="userpassword" class="errormessage"></span>
+            <p>Confirm Password:</p>
+            <div class="password-container">
+                <input type="password" name="ConfirmPassword" id="ConfirmPassword" autocomplete="off">
+                <i class="fa-solid fa-eye" onclick="myFunction2()" id="show-icon2"></i>
+                <i class="fa-solid fa-eye-slash" onclick="myFunction2()" id="hide-icon2"></i>
+            </div>
+            <span id="userconfirmpassword" class="errormessage"></span>
+            <div>
+                <button id="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
